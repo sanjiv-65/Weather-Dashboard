@@ -62,7 +62,7 @@ Open the app Open your browser and navigate to http://localhost:5173 where 5137 
 
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/ba247bf0-ce1a-4ad4-a7d3-2d98a2ba6116" />
 
-### Project Structure
+### Project Structure:
 
 ```bash
 my-project/
