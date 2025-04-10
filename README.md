@@ -55,4 +55,7 @@ Sign up here: (https://openweathermap.org/api).
 ```bash
 4c3563fe325286048c3943947d85747e
 ```
-
+### Screenshot
+```bash
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/ba247bf0-ce1a-4ad4-a7d3-2d98a2ba6116" />
+```
