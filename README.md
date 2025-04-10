@@ -28,6 +28,13 @@ A simple and responsive Weather Dashboard built with React that displays current
     ```
 
 
+### Tech Stack
+### 🛠️ Tech Stack
+
+&bull; React.js (Front-end library)
+&bull; Tailwind CSS (Styling)
+&bull; OpenWeatherMap API (Weather data)
+&bull; Vite (Build tool)
 
 
 ### **API Integration Details**
