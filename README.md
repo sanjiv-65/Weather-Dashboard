@@ -68,25 +68,26 @@ Open the app Open your browser and navigate to http://localhost:5173 where 5137 
 my-project/
    -node_modules/
 -public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── App.jsx
-│   │   ├── ErrorMessage.jsx
-│   │   ├── Loader.jsx
-│   │   ├── RecentSearches.jsx
-│   │   ├── SearchBar.jsx
-│   │   ├── ThemeToggle.jsx
-│   │   ├── WeatherDisplay.jsx
-│   ├── App.css
-│   ├── index.css
-│   ├── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
+   - src/
+    - assets/
+    - components/
+        - App.jsx
+        - ErrorMessage.jsx
+        - Loader.jsx
+        - RecentSearches.jsx
+        - SearchBar.jsx
+        - ThemeToggle.jsx
+        - WeatherDisplay.jsx
+     - App.css
+     - index.css
+     - main.jsx
+- .gitignore
+- eslint.config.js
+- index.html
+- package.json
 - package-lock.json
 - postcss.config.js
 - tailwind.config.js
 - README.md
 - vite.config.js
+
