@@ -61,3 +61,32 @@ Open the app Open your browser and navigate to http://localhost:5173 where 5137 
 ### Screenshot
 
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/ba247bf0-ce1a-4ad4-a7d3-2d98a2ba6116" />
+
+### Project Structure
+
+```bash
+my-project/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── App.jsx
+│   │   ├── ErrorMessage.jsx
+│   │   ├── Loader.jsx
+│   │   ├── RecentSearches.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── ThemeToggle.jsx
+│   │   ├── WeatherDisplay.jsx
+│   ├── App.css
+│   ├── index.css
+│   ├── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── tailwind.config.js
+├── README.md
+├── vite.config.js
