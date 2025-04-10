@@ -66,8 +66,8 @@ Open the app Open your browser and navigate to http://localhost:5173 where 5137 
 
 ```bash
 my-project/
-├── node_modules/
-├── public/
+   -node_modules/
+-public/
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -85,8 +85,8 @@ my-project/
 ├── eslint.config.js
 ├── index.html
 ├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── tailwind.config.js
-├── README.md
-├── vite.config.js
+- package-lock.json
+- postcss.config.js
+- tailwind.config.js
+- README.md
+- vite.config.js
