@@ -26,15 +26,12 @@ A simple and responsive Weather Dashboard built with React that displays current
     ```bash
     npm start
     ```
+###  Tech Stack
 
-
-### Tech Stack
-### 🛠️ Tech Stack
-
-&bull; React.js (Front-end library)
-&bull; Tailwind CSS (Styling)
-&bull; OpenWeatherMap API (Weather data)
-&bull; Vite (Build tool)
+&bull; React.js (Front-end library)<br>
+&bull; Tailwind CSS (Styling)<br>
+&bull; OpenWeatherMap API (Weather data)<br>
+&bull; Vite (Build tool)<br>
 
 
 ### **API Integration Details**
