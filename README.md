@@ -32,13 +32,16 @@ A simple and responsive Weather Dashboard built with React that displays current
 
 ### **API Integration Details**
 
-This project uses the [OpenWeatherMap API] 
-( https://api.openweathermap.org/data/2.5/weather?q={city}&amp;appid={YOUR_API_KEY}&amp;un
-its=metric ) to fetch real-time weather data.
+This project uses the [OpenWeatherMap API] to fetch real-time weather data.
 
-- **Base URL:** `https://api.openweathermap.org/data/2.5/weather`
-- **Authentication:** Requires an API key. [Sign up here](https://home.openweathermap.org/users/sign_up).
-- **Rate Limit:** 60 calls/minute (for free tier)
-- **Key Usage:** Store your API key in a `.env` file like so:
-
+ **Base URL:** 
+ ```bash
+ https://api.openweathermap.org/data/2.5/weather?q={city}&amp;appid={YOUR_API_KEY}&amp;un
+its=metric
+```
+**Authentication:** 
+Requires an API key.
+```bash
+[Sign up here](https://openweathermap.org/api).
+```
 
