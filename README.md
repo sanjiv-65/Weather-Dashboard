@@ -39,9 +39,8 @@ This project uses the [OpenWeatherMap API] to fetch real-time weather data.
  https://api.openweathermap.org/data/2.5/weather?q={city}&amp;appid={YOUR_API_KEY}&amp;un
 its=metric
 ```
-**Authentication:** 
-Requires an API key.
+## API key.
 ```bash
-[Sign up here](https://openweathermap.org/api).
+Sign up here: (https://openweathermap.org/api).
 ```
 
