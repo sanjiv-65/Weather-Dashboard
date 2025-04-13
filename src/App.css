@@ -4,12 +4,12 @@
 }
 
 .app.light {
-  background-color: #f8fafc;
-  color: #1e293b;
+  background-color: #6b6c6d;
+  color: #7e90b0;
 }
 
 .app.dark {
-  background-color: #1e293b;
+  background-color: #91a2be;
   color: #f8fafc;
 }
 

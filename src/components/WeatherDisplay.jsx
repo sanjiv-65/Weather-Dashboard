@@ -12,13 +12,17 @@ function WeatherDisplay({ weatherData, onRefresh }) {
   };
 
   return (
-    <div className={`weather-card p-6 rounded-lg shadow-lg ${darkMode ? 'bg-gray-800 text-white' : 'bg-white'} transition-all`}>
+    <div className={`weather-card p-6 rounded-lg border-2 ${
+      darkMode 
+        ? 'bg-gray-800 text-white border-gray-700 shadow-lg shadow-gray-900/30' 
+        : 'bg-white border-gray-200 shadow-xl shadow-gray-300/50'
+    } transition-all`}>
       <div className="flex justify-between items-start">
         <div>
           <h2 className="text-2xl font-bold mb-1">
             {weatherData.name}, {weatherData.sys.country}
           </h2>
-          <p className="text-sm text-gray-550 dark:text-gray-350">
+          <p className="text-sm text-gray-400 dark:text-gray-400">
             Last updated: {new Date().toLocaleString()}
           </p>
         </div>
@@ -33,13 +37,23 @@ function WeatherDisplay({ weatherData, onRefresh }) {
         </button>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+     
+      <div className="mt-4 mb-2">
+        <h3 className="text-xl font-bold text-center py-2 px-4 rounded-md dark:text-white-500 text-white-600 inline-block">
+          Current Weather: {weatherData.weather[0].main}
+        </h3>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
         <div className="weather-main flex items-center">
-          <img 
-            src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} 
-            alt={weatherData.weather[0].description}
-            className="w-24 h-24"
-          />
+
+          <div className="weather-icon-container bg-blue-50 dark:bg-gray-700 rounded-full p-1 mr-4">
+            <img 
+              src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`} 
+              alt={weatherData.weather[0].description}
+              className="w-24 h-24"
+            />
+          </div>
           <div>
             <h3 className="text-4xl font-bold">{Math.round(weatherData.main.temp)}°C</h3>
             <p className="text-xl capitalize">{weatherData.weather[0].description}</p>
@@ -48,38 +62,38 @@ function WeatherDisplay({ weatherData, onRefresh }) {
         
         <div className="weather-details grid grid-cols-2 gap-4">
           <div className="detail-item">
-            <p className="text-sm text-gray-500 dark:text-gray-400">Feels Like</p>
+            <p className="text-sm text-gray-700 dark:text-gray-600">Feels Like</p>
             <p className="text-lg font-semibold">{Math.round(weatherData.main.feels_like)}°C</p>
           </div>
           <div className="detail-item">
-            <p className="text-sm text-gray-500 dark:text-gray-400">Humidity</p>
+            <p className="text-sm text-gray-700 dark:text-gray-600">Humidity</p>
             <p className="text-lg font-semibold">{weatherData.main.humidity}%</p>
           </div>
           <div className="detail-item">
-            <p className="text-sm text-gray-500 dark:text-gray-400">Wind Speed</p>
+            <p className="text-sm text-gray-700 dark:text-gray-600">Wind Speed</p>
             <p className="text-lg font-semibold">{(weatherData.wind.speed * 3.6).toFixed(1)} km/h</p>
           </div>
           <div className="detail-item">
-            <p className="text-sm text-gray-500 dark:text-gray-400">Pressure</p>
+            <p className="text-sm text-gray-700 dark:text-gray-600">Pressure</p>
             <p className="text-lg font-semibold">{weatherData.main.pressure} hPa</p>
           </div>
         </div>
       </div>
       
       <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-500">
           <p className="text-sm text-gray-500 dark:text-gray-400">Sunrise</p>
           <p className="font-semibold">{formatTime(weatherData.sys.sunrise)}</p>
         </div>
-        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-500">
           <p className="text-sm text-gray-500 dark:text-gray-400">Sunset</p>
           <p className="font-semibold">{formatTime(weatherData.sys.sunset)}</p>
         </div>
-        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-500">
           <p className="text-sm text-gray-500 dark:text-gray-400">Min Temp</p>
           <p className="font-semibold">{Math.round(weatherData.main.temp_min)}°C</p>
         </div>
-        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700">
+        <div className="sun-info text-center p-3 rounded-lg bg-gray-50 dark:bg-gray-500">
           <p className="text-sm text-gray-500 dark:text-gray-400">Max Temp</p>
           <p className="font-semibold">{Math.round(weatherData.main.temp_max)}°C</p>
         </div>

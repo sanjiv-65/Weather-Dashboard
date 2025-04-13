@@ -6,7 +6,7 @@ function RecentSearches({ searches, onSelect }) {
   
   return (
     <div className="mb-6">
-      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">Recent Searches:</h3>
+      <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-400 mb-2">Recent Searches:</h3>
       <div className="flex flex-wrap gap-2">
         {searches.map((search, index) => (
           <button
